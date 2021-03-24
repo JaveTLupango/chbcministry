@@ -3,7 +3,7 @@
             <div class="logo mr-auto">
                 <!-- <h1 class="text-light"><a href="index.html"><span>Flexor</span></a></h1>
                  Uncomment below if you prefer to use an image logo -->
-                <a href="/"><img src="assets/img/logo.jpg" alt="" class=""></a>
+                <a href="/"><img src="assets/img/chbc-logo.jpg" alt="" class=""></a>
             </div>
             <nav class="nav-menu d-none d-lg-block" style="margin-top: 2%;">
                 <ul>
