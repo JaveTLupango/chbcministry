@@ -285,7 +285,7 @@ h6 {
 .mobile-nav-toggle {
     position: fixed;
     right: 15px;
-    top: 20px;
+    top: 35px;
     z-index: 9998;
     border: 0;
     background: none;

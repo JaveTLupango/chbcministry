@@ -3,7 +3,7 @@
         <div class="container d-flex">
             <div class="contact-info mr-auto">
                 <ul>
-                    <li><i class="icofont-envelope"></i><a href="mailto:contact@example.com">floresdeb@gmail.com</a></li>
+                    <li><i class="icofont-envelope"></i><a href="mailto:contact@example.com">info@chbcministry.com</a></li>
                     <li><i class="icofont-phone"></i> +63 912 345 6789</li>
                     <li><i class="icofont-clock-time icofont-flip-horizontal"></i> Mon-Fri 9am - 5pm</li>
                 </ul>
