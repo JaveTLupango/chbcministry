@@ -17,6 +17,7 @@
 @include('partialview.header')
     <!-- End Header -->
     <!-- ======= Hero Section ======= -->
+    @yield('content')
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="container" data-aos="fade-in">
             <h1>Welcome to Empowered Consumerism</h1>
