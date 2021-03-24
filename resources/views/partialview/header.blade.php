@@ -7,18 +7,19 @@
             </div>
             <nav class="nav-menu d-none d-lg-block" style="margin-top: 2%;">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li class="drop-down"><a href="">Oportunity</a>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="drop-down"><a href="/">Oportunity</a>
                         <ul>
-                            <li><a href="#">Member Ship Benefits</a></li>
-                            <li><a href="#">Business Program</a></li>
+                            <li><a href="/">Youth Bible Study</a></li>
+                            <li><a href="/">YoungProf Bible Study</a></li>
+                            <li><a href="/">motivational Session</a></li>
                         </ul>
                     </li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact">Login</a></li>
+                    <li><a href="/">Login</a></li>
                 </ul>
             </nav>
             <!-- .nav-menu -->
