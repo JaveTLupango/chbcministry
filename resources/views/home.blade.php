@@ -597,5 +597,4 @@
 
         </main>
         <!-- End #main -->
-
 @endsection()
