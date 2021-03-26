@@ -4,8 +4,8 @@
 
         <div class="section-title">
             <h2 data-aos="fade-up">Contact</h2>
-            <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
-                quidem hic quas.</p>
+            {{-- <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+                quidem hic quas.</p> --}}
         </div>
 
         <div class="row justify-content-center">
@@ -14,7 +14,7 @@
                 <div class="info-box">
                     <i class="bx bx-map"></i>
                     <h3>Our Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>West Binabag, Tayud, Consolacion</p>
                 </div>
             </div>
 
@@ -22,14 +22,14 @@
                 <div class="info-box">
                     <i class="bx bx-envelope"></i>
                     <h3>Email Us</h3>
-                    <p>info@example.com<br>contact@example.com</p>
+                    <p>info@chbc.com<br>contact@chbc.com</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="info-box">
                     <i class="bx bx-phone-call"></i>
                     <h3>Call Us</h3>
-                    <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                    <p>+63 912 3456 789<br>+63 998 7654 321</p>
                 </div>
             </div>
         </div>
@@ -63,9 +63,7 @@
                     <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
             </div>
-
         </div>
-
     </div>
 </section>
 <!-- End Contact Section -->
