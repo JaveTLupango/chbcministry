@@ -10,7 +10,7 @@
         <main id="main">
             <!-- ======= Why Us Section ======= -->
             @include('partialview.mainhome')
-            @include('partialview.aboutus')
+            {{-- @include('partialview.aboutus') --}}
             @include('partialview.services')
 
             @include('partialview.core')

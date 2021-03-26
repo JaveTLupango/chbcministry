@@ -17,14 +17,13 @@
 @include('partialview.header')
     <!-- End Header -->
     <!-- ======= Hero Section ======= -->
-    @yield('content')
- 
+@yield('content') 
 
 @include('partialview.footer')
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  @include('partialview.js')
+@include('partialview.js')
 
 </body>
 
