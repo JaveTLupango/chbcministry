@@ -15,7 +15,7 @@
 
             @include('partialview.core')
 
-            @include('partialview.testimonials')
+            {{-- @include('partialview.testimonials') --}}
 
             @include('partialview.team')
             <!-- ======= Pricing Section ======= 
