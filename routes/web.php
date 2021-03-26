@@ -12,15 +12,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('home');
 });
-
 Route::get('/blog', function () {
     return view('blog');
 });
-
 Route::get('/blogpost', function () {
     return view('post');
+});
+
+// Credentials list off routes 
+Route::get('/login', function () {
+    return view('credential.login');
+});
+Route::get('/register', function () {
+    return view('credential.register');
+});
+Route::get('/forgot-password', function () {
+    return view('credential.forgot-password');
+});
+Route::get('/reset-password', function () {
+    return view('credential.resetpassword');
 });
