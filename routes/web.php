@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/', 'App\Http\Controllers\SysteminfoController');
+Route::get('getsystemname', 'App\Http\Controllers\System_apiController@getSystemName');
 
 // Route::get('/', function () {
 //     return view('home');
