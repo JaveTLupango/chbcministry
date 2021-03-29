@@ -1,5 +1,5 @@
 window.onload = getLoadSystemName;
-window.onload = getLoadSystemServices;
+//window.onload = getLoadSystemServices;
 
 function getLoadSystemName() {
     //alert('ok');
@@ -34,6 +34,9 @@ function getLoadSystemName() {
             window.location.href = "/404";
         }
     });
+
+    getLoadSystemServices();
+    getSystemCore();
 }
 
 function getLoadSystemServices()
@@ -43,7 +46,7 @@ function getLoadSystemServices()
         type: "GET",
         success:function(a)
         {
-            debugger;
+            //debugger;
             if(a.length > 0) 
             {
                 var serviceHTML = "";
@@ -67,5 +70,60 @@ function getLoadSystemServices()
         {
             //window.location.href = "/404";
         }
-    });
+    });     
+}
+
+function getSystemCore()
+{
+    try 
+    {
+        $.ajax({
+            url: "/api/getsystemcore",
+            type: "GET",
+            success:function(core)
+            {
+                //alert(core);
+               // var json = json_encode(core);
+                debugger;
+                var countss = Object.keys(core).length;
+                if(countss > 0) 
+                {
+                    var coreHTML = '';
+                    for(b=0; b<Object.keys(core).length; b++)
+                    {
+                        var type = core[b]['s_type'];
+                        if(type == 'Our Mission')
+                        {
+                            coreHTML += '<div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">'+
+                                            '<div class="card" style="background-image: url(assets/img/values-1.jpg);">'+
+                                                '<div class="card-body">'+
+                                                    '<h5 class="card-title"><a href="">'+core[b]['type']+'</a></h5>'+
+                                                    '<p class="card-text">asdasdasadasd</p>'+
+                                                    '<div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>'+
+                                                '</div>'+
+                                            '</div>'+
+                                        '</div>';
+                        }                    
+                    }
+                    //alert('asd');
+                    document.getElementById("SystemCore_values").innerHTML = coreHTML; //Footer system title
+                    // document.getElementById("system_mainPage").append(a[1]['info2']);                
+                    //$('systemnameFooter').text = "CHBC";
+                }
+                else
+                {
+    
+                }
+            },
+            error:function(as)
+            {
+                //window.location.href = "/404";
+            }
+        });
+    }catch($ss)
+    {
+
+    }
+  
+    
 }

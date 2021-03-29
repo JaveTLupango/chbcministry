@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/', 'App\Http\Controllers\SysteminfoController');
 Route::get('api/getsystemname', 'App\Http\Controllers\System_apiController@getSystemName');
 Route::get('api/getsystemservices', 'App\Http\Controllers\System_apiController@getSystemServices');
+Route::get('api/getsystemcore', 'App\Http\Controllers\System_apiController@getSystemCore');
 
 // Route::get('/', function () {
 //     return view('home');

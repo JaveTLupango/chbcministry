@@ -5,8 +5,8 @@
         <div class="section-title" data-aos="fade-up">
             <h2>- C . O . R . E -</h2>
         </div>
-        <div class="row">
-            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="row" id="SystemCore_values">
+            {{--  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
                 <div class="card" style="background-image: url(assets/img/values-1.jpg);">
                     <div class="card-body">
                         <h5 class="card-title"><a href="">Our Mission</a></h5>
@@ -67,7 +67,7 @@
                         <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
-            </div>
+            </div>  --}}
         </div>
 
     </div>

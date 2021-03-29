@@ -17,7 +17,13 @@ class System_apiController extends Controller
 
     public function getSystemServices()
     {
-        $service = systemservices::All();
+        $service = systemservices::ALL()->WHERE('title','Services');
         return $service;
+    }
+
+    public function getSystemCore()
+    {
+        $core = systemservices::ALL()->WHERE('title','CORE');
+        return  $core;
     }
 }

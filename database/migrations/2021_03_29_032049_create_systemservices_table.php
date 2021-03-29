@@ -16,7 +16,7 @@ class CreateSystemservicesTable extends Migration
         Schema::create('systemservices', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('type');
+            $table->string('s_type');
             $table->mediumText('body');
             $table->timestamps();
         });
