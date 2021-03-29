@@ -1,9 +1,10 @@
 window.onload = getLoadSystemName;
+window.onload = getLoadSystemServices;
 
 function getLoadSystemName() {
     //alert('ok');
     $.ajax({
-        url: "/getsystemname",
+        url: "/api/getsystemname",
         type: "GET",
         success:function(a)
         {
@@ -31,6 +32,40 @@ function getLoadSystemName() {
         error:function()
         {
             window.location.href = "/404";
+        }
+    });
+}
+
+function getLoadSystemServices()
+{
+    $.ajax({
+        url: "/api/getsystemservices",
+        type: "GET",
+        success:function(a)
+        {
+            debugger;
+            if(a.length > 0) 
+            {
+                var serviceHTML = "";
+                for(i=0; i<a.length; i++)
+                {
+                    serviceHTML +=' <div class="col-lg-4 col-md-6" data-aos="fade-up">' +
+                                        '<div class="icon-box">'+
+                                            '<div class="icon"><i class="icofont-book"></i></div>'+
+                                            '<h4 class="title"><a href="">'+ a[i]['type'] +'</a></h4>'+
+                                            '<p class="description">'+ a[i]['body'] +'</p>'+
+                                        '</div>'+
+                                    '</div>';
+                }
+                //alert('asd');
+                document.getElementById("systemServices").innerHTML = serviceHTML; //Footer system title
+                // document.getElementById("system_mainPage").append(a[1]['info2']);                
+                //$('systemnameFooter').text = "CHBC";
+            }
+        },
+        error:function()
+        {
+            //window.location.href = "/404";
         }
     });
 }

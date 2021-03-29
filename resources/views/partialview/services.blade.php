@@ -7,9 +7,8 @@
             {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
                 quidem hic quas.</p> --}}
         </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="row" id="systemServices">
+            {{--  <div class="col-lg-4 col-md-6" data-aos="fade-up">
                 <div class="icon-box">
                     <div class="icon"><i class="icofont-book"></i></div>
                     <h4 class="title"><a href="">Children Ministry</a></h4>
@@ -50,7 +49,7 @@
                     <h4 class="title"><a href="">Motivational Session</a></h4>
                     <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                 </div>
-            </div>
+            </div>  --}}
         </div>
 
     </div>
