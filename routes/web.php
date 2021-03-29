@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SystemController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,12 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::resource('home', 'App\Http\Controllers\SysteminfoController');
+
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/home', function () {
-    return view('home');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
 Route::get('/blog', function () {
     return view('blog');
 });
