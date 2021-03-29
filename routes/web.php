@@ -15,6 +15,7 @@ use App\Http\Controllers\SystemController;
 
 Route::resource('home', 'App\Http\Controllers\SysteminfoController');
 
+
 Route::get('/', function () {
     return view('home');
 });
