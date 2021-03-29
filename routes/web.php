@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SystemController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +12,15 @@ use App\Http\Controllers\SystemController;
 |
 */
 
-Route::resource('home', 'App\Http\Controllers\SysteminfoController');
+Route::resource('/', 'App\Http\Controllers\SysteminfoController');
 
-
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 // Route::get('/home', function () {
 //     return view('home');
 // });
+
 Route::get('/blog', function () {
     return view('blog');
 });
@@ -29,7 +28,7 @@ Route::get('/blogpost', function () {
     return view('post');
 });
 
-// Credentials list off routes 
+// Credentials list off routes
 Route::get('/login', function () {
     return view('credential.login');
 });
