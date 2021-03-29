@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('status');
             $table->string('usertype');
             $table->string('bday');
-            $table->LongBlob('profile');
+            $table->binary('profile');
             $table->rememberToken();
             $table->timestamps();
         });
