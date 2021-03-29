@@ -15,6 +15,9 @@ class CreateSysteminfosTable extends Migration
     {
         Schema::create('systeminfos', function (Blueprint $table) {
             $table->id();
+            $table->string('info1');
+            $table->string('info2');
+            $table->mediumText('infobody');
             $table->timestamps();
         });
     }
