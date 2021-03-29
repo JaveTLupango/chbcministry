@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col-xl-4 col-lg-5" data-aos="fade-up">
                 <div class="content">
-                    <h3>Community Hope Baptish Chruch is?</h3>
+                    <h3>{{ $s_info[2]['info2'] }}</h3>
                     <p>
-                        Decipleship making body of Christ Jesus our LORD, not only to inform them but to transform individual to according to Christ Jesus Our Lord Perspective.
+                        {{ $s_info[2]['infobody'] }} 
                     </p>
                     <div class="text-center">
                         <a href="#" class="more-btn">Get Started<i class="bx bx-chevron-right"></i></a>
@@ -18,22 +18,22 @@
                         <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                             <div class="icon-box mt-4 mt-xl-0">
                                 <i class="bx bx-question-mark"></i>
-                                <h4>WHO WE ARE?</h4>
-                                <p>We are a religious group and teach about life of Christ Jesus Our Lord.</p>
+                                <h4>{{ $s_info[3]['info2'] }}</h4>
+                                <p> {{ $s_info[3]['infobody'] }} </p>
                             </div>
                         </div>
                         <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                             <div class="icon-box mt-4 mt-xl-0">
                                 <i class="bx bx-map"></i>
-                                <h4>WHERE WE ARE?</h4>
-                                <p>We are exist in province of Cebu Philippines</p>
+                                <h4>{{ $s_info[4]['info2'] }}</h4>
+                                <p>{{ $s_info[4]['infobody'] }}</p>
                             </div>
                         </div>
                         <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                             <div class="icon-box mt-4 mt-xl-0">
                                 <i class="bx bx-laptop"></i>
-                                <h4>CONNECT ME</h4>
-                                <p>Please click contact or just select in Oportunity in menu selection.</p>
+                                <h4>{{ $s_info[5]['info2'] }}</h4>
+                                <p>{{ $s_info[5]['infobody'] }}</p>
                             </div>
                         </div>
                     </div>
