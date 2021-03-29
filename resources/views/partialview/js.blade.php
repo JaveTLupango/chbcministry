@@ -9,30 +9,8 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+   <script src="assets/js/custom.js"></script> {{--   custom js for system name and description  --}}
 
     <script type="text/javascript">
-        function codeAddress() {
-            //alert('ok');
-            $.ajax({
-                url: "/getsystemname",
-                type: "GET",      
-                success:function(a)
-                {
-                    debugger;
-                    if(a.length > 0) 
-                    {
-                        alert('asd');
-                    }
-                    else
-                    {
-                        window.location.href = "/404";
-                    }
-                },
-                error:function()
-                {
-                    window.location.href = "/404";
-                }
-            });
-        }
-        window.onload = codeAddress;
+      
         </script>
