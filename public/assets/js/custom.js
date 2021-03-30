@@ -89,22 +89,70 @@ function getSystemCore()
                 if(countss > 0) 
                 {
                     var coreHTML = '';
+                    var mission = '';
+                    var vission = '';
+                    var coreValues = '';
+                    var plan = '';
                     for(b=0; b<Object.keys(core).length; b++)
                     {
                         var type = core[b]['s_type'];
                         if(type == 'Our Mission')
                         {
-                            coreHTML += '<div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">'+
+                            mission += '<div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">'+
                                             '<div class="card" style="background-image: url(assets/img/values-1.jpg);">'+
                                                 '<div class="card-body">'+
-                                                    '<h5 class="card-title"><a href="">'+core[b]['type']+'</a></h5>'+
-                                                    '<p class="card-text">asdasdasadasd</p>'+
+                                                    '<h5 class="card-title"><a href="">'+core[b]['s_type']+'</a></h5>'+
+                                                    '<p class="card-text">'+core[b]['body']+'</p>'+
                                                     '<div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>'+
                                                 '</div>'+
                                             '</div>'+
                                         '</div>';
-                        }                    
-                    }
+                        }          
+                        if(type == 'Our Vision')
+                        {
+                            vission += '<div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">'+
+                                            '<div class="card" style="background-image: url(assets/img/values-1.jpg);">'+
+                                                '<div class="card-body">'+
+                                                    '<h5 class="card-title"><a href="">'+core[b]['s_type']+'</a></h5>'+
+                                                    '<p class="card-text">'+core[b]['body']+'</p>'+
+                                                    '<div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>'+
+                                                '</div>'+
+                                            '</div>'+
+                                        '</div>';
+                        }      
+                        if(type == 'Core Values')
+                        {
+                            coreValues +='<li><p class="card-text">'+core[b]['body'].substring(0, 45)+'....</p></li>';                            
+                        }
+                    }           
+
+                 coreHTML += '<div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">'+
+                                            '<div class="card" style="background-image: url(assets/img/values-1.jpg);">'+
+                                                '<div class="card-body">'+
+                                                    '<h5 class="card-title"><a href="">Core Values</a></h5>'+
+                                                    '<ul>'+ coreValues +'</ul>'+
+                                                    '<div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>'+
+                                                '</div>'+
+                                            '</div>'+
+                                        '</div>';
+
+                  plan +=' <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">'+
+                    '<div class="card" style="background-image: url(assets/img/values-4.jpg);">'+
+                         '<div class="card-body">'+
+                             '<h5 class="card-title"><a href="">Our Plan</a></h5>'+
+                                 '<div class="text-center">'+
+                                    '<button type="button" class="btn btn-primary" title="OPPORTUNITY">OPPORTUNITY</button>'+
+                                     '<button type="button" class="btn btn-secondary" title="Spiritual Foundation Discipleship Making" >'+
+                                         'S . F . D . M</button>'+
+                                     '<button type="button" class="btn btn-success" title="Strategies In Discipleship" >S . I . D</button>'+
+                                 '</div>                                '+
+                             '<div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>'+
+                         '</div>'+
+                     '</div>'+
+                 '</div> ';
+
+                 coreHTML += mission + vission +plan;
+
                     //alert('asd');
                     document.getElementById("SystemCore_values").innerHTML = coreHTML; //Footer system title
                     // document.getElementById("system_mainPage").append(a[1]['info2']);                

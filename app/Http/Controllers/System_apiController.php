@@ -23,7 +23,7 @@ class System_apiController extends Controller
 
     public function getSystemCore()
     {
-        $core = systemservices::ALL()->WHERE('title','CORE');
+        $core = systemservices::WHERE('title','core')->get();
         return  $core;
     }
 }

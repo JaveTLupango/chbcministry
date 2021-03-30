@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('usertype');
             $table->string('bday');
             $table->binary('profile');
+            $table->string('job_desc');
             $table->rememberToken();
             $table->timestamps();
         });
