@@ -6,7 +6,7 @@
             <h2>- C . O . R . E -</h2>
         </div>
         <div class="row" id="SystemCore_values">
-            {{--  <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+             {{-- <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
                 <div class="card" style="background-image: url(assets/img/values-1.jpg);">
                     <div class="card-body">
                         <h5 class="card-title"><a href="">Our Mission</a></h5>
