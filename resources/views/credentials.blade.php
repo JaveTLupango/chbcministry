@@ -24,7 +24,7 @@
     <a href=""><b>@yield('title1')</b> @yield('title2')</a>
   </div>
 
-  @yield('content')   
+  @yield('content')
 
 
 </div>

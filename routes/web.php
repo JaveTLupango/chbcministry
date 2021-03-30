@@ -44,3 +44,7 @@ Route::get('/forgot-password', function () {
 Route::get('/reset-password', function () {
     return view('credential.resetpassword');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
