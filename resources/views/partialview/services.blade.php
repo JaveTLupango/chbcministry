@@ -55,3 +55,12 @@
     </div>
 </section>
 <!-- End Services Section -->
+
+<script type="text/javascript">
+    window.onload = func_service;
+    function func_service()
+    {
+        getLoadSystemServices();
+    }
+ 
+</script>

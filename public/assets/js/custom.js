@@ -35,8 +35,8 @@ function getLoadSystemName() {
         }
     });
 
-    getLoadSystemServices();
-    getSystemCore();
+    //getLoadSystemServices();
+    //getSystemCore();
 }
 
 function getLoadSystemServices()

@@ -9,7 +9,6 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-   <script src="assets/js/custom.js"></script> {{--   custom js for system name and description  --}}
 
     <script type="text/javascript">
       
