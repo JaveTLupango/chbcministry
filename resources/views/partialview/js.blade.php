@@ -10,6 +10,12 @@
     <script src="assets/vendor/aos/aos.js"></script>    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-    <script type="text/javascript">
-      
-        </script>
+
+<script type="text/javascript">
+    window.onload = func_system;
+    function func_system()
+    {
+        getLoadSystemName();
+    }
+
+</script>

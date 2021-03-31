@@ -1,6 +1,6 @@
  <!-- ======= Values Section ======= -->
  <section id="values" class="values" onload="getSystemCore()">
-    <div class="container">
+    <div class="container" onload="func_core()">
 
         <div class="section-title" data-aos="fade-up">
             <h2>- C . O . R . E -</h2>
@@ -10,11 +10,11 @@
                 <div class="card" style="background-image: url(assets/img/values-1.jpg);">
                     <div class="card-body">
                         <h5 class="card-title"><a href="">Our Mission</a></h5>
-                        <p class="card-text">Bringing <b>individual person and families</b> into the saving intimate relationship with <b>Jesus Christ</b>, 
-                            transforming them to be committed Members of His body, 
-                            develop them into Christ life maturity, 
-                            and equip them for His intentional Ministry 
-                            in the church and to have a lifestyle Mission 
+                        <p class="card-text">Bringing <b>individual person and families</b> into the saving intimate relationship with <b>Jesus Christ</b>,
+                            transforming them to be committed Members of His body,
+                            develop them into Christ life maturity,
+                            and equip them for His intentional Ministry
+                            in the church and to have a lifestyle Mission
                             in the world to Magnify His name.</p>
                         <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
                     </div>
@@ -41,7 +41,7 @@
                                 <p class="card-text">Quality : Revolutionary and effective in the i....</p>
                             </li>
                         </ul>
-                        
+
                         <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                                 <button type="button" class="btn btn-primary" title="OPPORTUNITY">OPPORTUNITY</button>
                                 <button type="button" class="btn btn-secondary" title="Spiritual Foundation Discipleship Making" >S . F . D . M</button>
                                 <button type="button" class="btn btn-success" title="Strategies In Discipleship" >S . I . D</button>
-                            </div>                                
+                            </div>
                         <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
                     </div>
                 </div>
@@ -75,10 +75,10 @@
 <!-- End Values Section -->
 
 <script type="text/javascript">
-    window.onload = func_core;
+    //window.onload = func_core;
     function func_core()
     {
         getSystemCore();
     }
- 
+
 </script>
