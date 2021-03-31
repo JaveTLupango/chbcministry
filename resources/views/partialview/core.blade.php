@@ -75,10 +75,13 @@
 <!-- End Values Section -->
 
 <script type="text/javascript">
-    //window.onload = func_core;
+    window.onload = func_core;
     function func_core()
     {
+        debugger;
         getSystemCore();
+        getLoadSystemName();
+        getLoadSystemServices();
     }
 
 </script>
