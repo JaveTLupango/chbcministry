@@ -174,3 +174,23 @@ function getSystemCore()
 
 
 }
+
+function Logout_account()
+{
+    debugger;
+    try
+    {
+        $.ajax({
+            url: "/logout",
+            type: "POST",
+            success:function(core)
+            {
+
+            }
+          
+        });
+    }catch($ss)
+    {
+
+    }
+}

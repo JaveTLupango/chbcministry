@@ -19,7 +19,8 @@
                     <li><a href="#team">Team</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="/login">Login</a></li>
+                    <li><a href="/login">Login</a></li>      
+                    <li><a href="/logout">Logout</a></li>   
                 </ul>
             </nav>
             <!-- .nav-menu -->

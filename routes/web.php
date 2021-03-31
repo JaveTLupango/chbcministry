@@ -16,6 +16,7 @@ Route::resource('/', 'App\Http\Controllers\SysteminfoController');
 Route::get('api/getsystemname', 'App\Http\Controllers\System_apiController@getSystemName');
 Route::get('api/getsystemservices', 'App\Http\Controllers\System_apiController@getSystemServices');
 Route::get('api/getsystemcore', 'App\Http\Controllers\System_apiController@getSystemCore');
+Route::get('logout', 'App\Http\Controllers\System_apiController@userLogout');
 
 // Route::get('/', function () {
 //     return view('home');
@@ -35,6 +36,7 @@ Route::get('/blogpost', function () {
 Route::get('/login', function () {
     return view('credential.login');
 });
+
 Route::get('/register', function () {
     return view('credential.register');
 });
