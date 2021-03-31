@@ -1,4 +1,7 @@
-@extends('layouts.app')
+
+@extends('viewtemplate')
+
+@section('title', 'Home')
 
 @section('content')
 <div class="container">
