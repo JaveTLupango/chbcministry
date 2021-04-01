@@ -16,9 +16,9 @@ class CreateESubcribersTable extends Migration
         Schema::create('e_subcribers', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique();
-            $table->integer('type');
-            $table->integer('status');
-            $table->datetime('subdate');
+            $table->integer('type')->nullable();
+            $table->integer('status')->nullable();
+            $table->datetime('subdate')->nullable();
             $table->timestamps();
         });
     }
