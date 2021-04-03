@@ -54,7 +54,7 @@ function getLoadSystemServices()
                     serviceHTML +=' <div class="col-lg-4 col-md-6" data-aos="fade-up">' +
                                         '<div class="icon-box">'+
                                             '<div class="icon"><i class="icofont-book"></i></div>'+
-                                            '<h4 class="title"><a href="">'+ a[i]['type'] +'</a></h4>'+
+                                            '<h4 class="title"><a href="">'+ a[i]['s_type'] +'</a></h4>'+
                                             '<p class="description">'+ a[i]['body'] +'</p>'+
                                         '</div>'+
                                     '</div>';

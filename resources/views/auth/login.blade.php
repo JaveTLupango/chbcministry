@@ -40,7 +40,6 @@
                                 @enderror
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <div class="form-check">
