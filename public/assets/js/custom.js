@@ -171,8 +171,57 @@ function getSystemCore()
     {
 
     }
+}
 
+function getLoadSystemFaq()
+{
+    debugger;
+    try
+    {
+        $.ajax({
+            url: "api/getsystemfaq",
+            type: "GET",
+            success:function(faqres)
+            {
+                var faq = '';
+                for(i=0; i<faqres.length; i++)
+                {
+                    debugger;
+                    //var classHTML = '';
+                    if (faq == '')
+                    {
+                        faq += ' <li data-aos="fade-up" class="active" >'+
+                        ' <i class="bx bx-help-circle icon-help"></i> '+
+                        '<a data-toggle="collapse" class="collapse" href="#faq-list-'+(i+1)+'">'+
+                        faqres[i]['faq_title']+
+                        '<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>'+
+                        '<div id="faq-list-'+(i+1)+'" class="collapse show" data-parent=".faq-list">'+
+                            '<p> '+faqres[i]['faq_body']+' </p>' +
+                        '</div>'+
+                        '</li>';
 
+                    } else{
+
+                        faq += ' <li data-aos="fade-up" data-aos-delay="'+i+'00">'+
+                        ' <i class="bx bx-help-circle icon-help"></i> '+
+                         '<a data-toggle="collapse" class="collapse" href="#faq-list-'+(i+1)+'">'+
+                         faqres[i]['faq_title']+
+                         '<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>'+
+                         '<div id="faq-list-'+(i+1)+'" class="collapse" data-parent=".faq-list">'+
+                             '<p> '+faqres[i]['faq_body']+' </p>' +
+                         '</div>'+
+                        '</li>';
+                    }   
+
+                    
+                }
+                document.getElementById("Systemfaq").innerHTML = faq; 
+            }
+        });
+    }catch($ss)
+    {
+
+    }
 }
 
 function Logout_account()
@@ -187,7 +236,7 @@ function Logout_account()
             {
 
             }
-          
+
         });
     }catch($ss)
     {

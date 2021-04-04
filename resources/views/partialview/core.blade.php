@@ -82,6 +82,7 @@
         getSystemCore();
         getLoadSystemName();
         getLoadSystemServices();
+        getLoadSystemFaq();
     }
 
 </script>

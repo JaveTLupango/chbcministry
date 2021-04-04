@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Systeminfo;
 use App\Models\SystemServices;
+use App\Models\Systemfaq;
 use Illuminate\Support\Facades\Auth;
 
 class System_apiController extends Controller
@@ -28,14 +29,20 @@ class System_apiController extends Controller
         return  $core;
     }
 
+    public function getSystemFaq()
+    {
+        $core = systemfaq::all();  //systemfaqs::all()->take(5);
+        return  $core;
+    }
+
     public function userLogout()
     {
         Auth::logout();
 
         //$request->session()->invalidate();
-    
+
         //$request->session()->regenerateToken();
-    
+
         return redirect('/');
     }
 }
