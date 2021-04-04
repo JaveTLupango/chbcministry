@@ -211,11 +211,11 @@ function getLoadSystemFaq()
                              '<p> '+faqres[i]['faq_body']+' </p>' +
                          '</div>'+
                         '</li>';
-                    }   
+                    }
 
-                    
+
                 }
-                document.getElementById("Systemfaq").innerHTML = faq; 
+                document.getElementById("Systemfaq").innerHTML = faq;
             }
         });
     }catch($ss)
